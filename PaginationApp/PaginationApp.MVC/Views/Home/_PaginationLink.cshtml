@@ -1,0 +1,12 @@
+﻿@using Dto = Paginations.Dtos;
+@using Model = Paginations.Models;
+@model Dto.PaginationUI<Model.Person>
+
+<li class="page-item @(Model.CurrentPage == Model.Page.CurrentPage ? "active" : "")">
+    <a class="page-link"
+        asp-route-CurrentPage="@Model.CurrentPage"
+        asp-route-SearchString="@Model.SearchString"
+        asp-route-RecordPerPage_Id="@Model.RecordPerPage.Id">
+        @Model.TagName
+    </a>
+</li>

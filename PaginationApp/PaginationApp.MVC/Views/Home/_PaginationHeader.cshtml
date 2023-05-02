@@ -1,0 +1,9 @@
+﻿@using Dto = Paginations.Dtos;
+@using Model = Paginations.Models;
+@model Dto.PaginationUI<Model.Person>
+
+<a asp-route-SortField="@Model.TagName"
+   asp-route-RecordPerPage_Id="@Model.RecordPerPage.Id"
+   asp-route-IsFieldOrderChanged="true">
+    @Model.TagName
+</a>

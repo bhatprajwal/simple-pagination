@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Mishra",
+    "email": "aarav.mishra@example.com",
+    "place": "Delhi"
+  },
+  {
+    "id": 2,
+    "name": "Aditi Patel",
+    "email": "aditi.patel@example.com",
+    "place": "Mumbai"
+  },
+  {
+    "id": 3,
+    "name": "Alok Gupta",
+    "email": "alok.gupta@example.com",
+    "place": "Bangalore"
+  },
+  {
+    "id": 4,
+    "name": "Amit Sharma",
+    "email": "amit.sharma@example.com",
+    "place": "Hyderabad"
+  },
+  {
+    "id": 5,
+    "name": "Ananya Singh",
+    "email": "ananya.singh@example.com",
+    "place": "Kolkata"
+  },
+  {
+    "id": 6,
+    "name": "Arjun Nair",
+    "email": "arjun.nair@example.com",
+    "place": "Chennai"
+  },
+  {
+    "id": 7,
+    "name": "Deepika Pillai",
+    "email": "deepika.pillai@example.com",
+    "place": "Kochi"
+  },
+  {
+    "id": 8,
+    "name": "Gaurav Singh",
+    "email": "gaurav.singh@example.com",
+    "place": "Jaipur"
+  },
+  {
+    "id": 9,
+    "name": "Ishaan Verma",
+    "email": "ishaan.verma@example.com",
+    "place": "Pune"
+  },
+  {
+    "id": 10,
+    "name": "Kavya Reddy",
+    "email": "kavya.reddy@example.com",
+    "place": "Bengaluru"
+  },
+  {
+    "id": 11,
+    "name": "Manish Agarwal",
+    "email": "manish.agarwal@example.com",
+    "place": "Noida"
+  },
+  {
+    "id": 12,
+    "name": "Neha Desai",
+    "email": "neha.desai@example.com",
+    "place": "Mumbai"
+  },
+  {
+    "id": 13,
+    "name": "Pranav Srinivasan",
+    "email": "pranav.srinivasan@example.com",
+    "place": "Chennai"
+  },
+  {
+    "id": 14,
+    "name": "Riya Gupta",
+    "email": "riya.gupta@example.com",
+    "place": "Hyderabad"
+  },
+  {
+    "id": 15,
+    "name": "Vedika Shah",
+    "email": "vedika.shah@example.com",
+    "place": "Ahmedabad"
+  },
+  {
+    "id": 16,
+    "name": "Siddharth Das",
+    "email": "siddharth.das@example.com",
+    "place": "Kolkata"
+  },
+  {
+    "id": 17,
+    "name": "Meera Patel",
+    "email": "meera.patel@example.com",
+    "place": "Mumbai"
+  },
+  {
+    "id": 18,
+    "name": "Arun Kumar",
+    "email": "arun.kumar@example.com",
+    "place": "Chennai"
+  },
+  {
+    "id": 19,
+    "name": "Neha Gupta",
+    "email": "neha.gupta@example.com",
+    "place": "Delhi"
+  },
+  {
+    "id": 20,
+    "name": "Pranav Sharma",
+    "email": "pranav.sharma@example.com",
+    "place": "Bangalore"
+  },
+  {
+    "id": 21,
+    "name": "Sneha Singh",
+    "email": "sneha.singh@example.com",
+    "place": "Kolkata"
+  },
+  {
+    "id": 22,
+    "name": "Aryan Jain",
+    "email": "aryan.jain@example.com",
+    "place": "Mumbai"
+  },
+  {
+    "id": 23,
+    "name": "Priya Reddy",
+    "email": "priya.reddy@example.com",
+    "place": "Chennai"
+  },
+  {
+    "id": 24,
+    "name": "Vikas Yadav",
+    "email": "vikas.yadav@example.com",
+    "place": "Delhi"
+  },
+  {
+    "id": 25,
+    "name": "Aditi Desai",
+    "email": "aditi.desai@example.com",
+    "place": "Bangalore"
+  },
+  {
+    "id": 26,
+    "name": "Aarav Mishra",
+    "email": "aarav.m@example.com",
+    "place": "Mumbai"
+  },
+  {
+    "id": 27,
+    "name": "Aditi Patel",
+    "email": "aditi.p@example.com",
+    "place": "Bangalore"
+  }
+]

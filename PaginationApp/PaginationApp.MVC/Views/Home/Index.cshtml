@@ -1,0 +1,77 @@
+﻿@using Dto = Paginations.Dtos;
+@using Model = Paginations.Models;
+@model Dto.PaginationUI<Model.Person>
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "_Layout";
+}
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get, new { name = "form", id = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <span class="float-start">
+        @Html.TextBoxFor(s => Model.SearchString)
+        <input type="submit" asp-route-RecordPerPage_Id="@Model.RecordPerPage.Id" value="Search" />
+    </span>
+
+    <span class="float-end">
+        <select asp-items="@(new SelectList(Model.PageRecord, "Id", "Value"))" asp-for="@Model.RecordPerPage.Id" 
+             name="RecordPerPage_Id" asp-route-SortField="@Model.Field.Name">
+            <option>Select Record Per Page</option>
+        </select>
+    </span>
+
+    @if (Model != null)
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    @foreach (var property in Model.Page.Data.FirstOrDefault().GetType().GetProperties())
+                    {
+                        <th>
+                            <partial name="_PaginationHeader" model="@Model" asp-route-TagName="@(Model.TagName = property.Name)" />
+                        </th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Page.Data)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Email</td>
+                        <td>@item.Place</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div>
+            <span class="float-start">
+                Page No : @Model.Page.CurrentPage of @Model.Page.TotalPage
+            </span>
+            <br />
+            <br />
+            <ul class="pagination pull-right">
+                @if (Model.Page.HasPrevious)
+                {
+                    <partial name="_PaginationLink" model="@Model" asp-route-TagName="@(Model.TagName = "Previous")"
+                     asp-route-CurrentPage="@(Model.CurrentPage = (Model.Page.CurrentPage - 1))" />
+                }
+                @for (var i = 1; i <= Model.Page.TotalPage; i++)
+                {
+                    <partial name="_PaginationLink" model="@Model" asp-route-CurrentPage="@(Model.CurrentPage = i)"
+                     asp-route-TagName="@(Model.TagName = i.ToString())" />
+                }
+                @if (Model.Page.HasNext)
+                {
+                    <partial name="_PaginationLink" model="@Model"
+                     asp-route-TagName="@(Model.TagName = "Next")" asp-route-CurrentPage="@(Model.CurrentPage = (Model.Page.CurrentPage + 1))" />
+                }
+            </ul>
+        </div>
+    }
+}
